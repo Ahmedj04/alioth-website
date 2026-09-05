@@ -47,7 +47,7 @@
     group.addEventListener("click", e => {
       if(!window.matchMedia("(max-width: 800px)").matches) return;
       if(e.target.closest("a")) return;
-      const route = group.classList.contains("win")
+      const route = group.classList.contains("compete")
         ? "proposal-development.html"
         : group.classList.contains("build")
           ? "recruitment.html"

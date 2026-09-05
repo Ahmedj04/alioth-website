@@ -1950,7 +1950,7 @@ body {
   color: #92a0a5
 }
 
-.triangle-node.win {
+.triangle-node.compete {
   top: 8%;
   left: 50%;
   transform: translateX(-50%);
@@ -2365,7 +2365,7 @@ body {
     width: 94vw
   }
 
-  .triangle-node.win {
+  .triangle-node.compete {
     top: 8%
   }
 
@@ -3708,7 +3708,7 @@ body {
   border-left: 1px solid rgba(11, 17, 21, .09)
 }
 
-.mega-group.win {
+.mega-group.compete {
   border-top: 3px solid #70d9cf
 }
 
@@ -4021,7 +4021,7 @@ body {
   font-weight: 900
 }
 
-.route-card.win .route-word {
+.route-card.compete .route-word {
   color: #258d83
 }
 
@@ -5628,7 +5628,7 @@ body {
     border-radius: 10px;
   }
 
-  .dropdown.mega-menu .mega-group.win:before {
+  .dropdown.mega-menu .mega-group.compete:before {
     background: #70d9cf
   }
 
@@ -5719,8 +5719,8 @@ body {
     line-height: 1.35;
   }
 
-  /* WIN/BuILD/GROW are visually distinguishable without becoming colourful. */
-  .dropdown.mega-menu .mega-group.win>a:first-of-type {
+  /* COMPETE/BuILD/GROW are visually distinguishable without becoming colourful. */
+  .dropdown.mega-menu .mega-group.compete>a:first-of-type {
     border-color: rgba(112, 217, 207, .12) !important
   }
 
@@ -6176,7 +6176,7 @@ body {
     font-weight: 800 !important;
   }
 
-  .mobile-open .dropdown.mega-menu .mega-group.win {
+  .mobile-open .dropdown.mega-menu .mega-group.compete {
     border-top: 2px solid #70d9cf !important;
   }
 
@@ -6188,7 +6188,7 @@ body {
     border-top: 2px solid #8ba8c0 !important;
   }
 
-  .mobile-open .dropdown.mega-menu .mega-group.win:before,
+  .mobile-open .dropdown.mega-menu .mega-group.compete:before,
   .mobile-open .dropdown.mega-menu .mega-group.build:before,
   .mobile-open .dropdown.mega-menu .mega-group.grow:before {
     display: none !important;
@@ -6428,8 +6428,8 @@ body {
   color: var(--cyan)
 }
 
-.mega-group.win,
-.route-card.win {
+.mega-group.compete,
+.route-card.compete {
   border-top-color: var(--orange)
 }
 
@@ -6443,7 +6443,7 @@ body {
   border-top-color: var(--cyan)
 }
 
-.mega-group.win:before {
+.mega-group.compete:before {
   background: var(--orange)
 }
 
@@ -6455,7 +6455,7 @@ body {
   background: var(--cyan)
 }
 
-.mega-group.win>a:first-of-type {
+.mega-group.compete>a:first-of-type {
   border-color: rgba(255, 102, 0, .16) !important
 }
 
@@ -6467,9 +6467,9 @@ body {
   border-color: rgba(0, 205, 255, .18) !important
 }
 
-.route-card.win .route-word,
-.tree-branch.win .branch-head span,
-.tree-branch.win h3 {
+.route-card.compete .route-word,
+.tree-branch.compete .branch-head span,
+.tree-branch.compete h3 {
   color: var(--orange)
 }
 
@@ -6580,7 +6580,7 @@ body {
     color: #C7F1FF !important
   }
 
-  .dropdown.mega-menu .mega-group.win:before {
+  .dropdown.mega-menu .mega-group.compete:before {
     background: var(--orange)
   }
 
@@ -6602,7 +6602,7 @@ body {
 }
 
 @media (max-width:800px) {
-  .mobile-open .dropdown.mega-menu .mega-group.win {
+  .mobile-open .dropdown.mega-menu .mega-group.compete {
     border-top-color: var(--orange) !important
   }
 

@@ -8,7 +8,7 @@ This is the final client-ready static build based on the selected AliothDigital 
 - Added mobile Services accordion behaviour and ensured the menu cannot leave the page body locked after resizing.
 - Added overflow protection so grids, forms, tables and large visual elements cannot create accidental horizontal scrolling.
 - Tightened mobile typography, buttons, forms, cards, hero sections, statistics, footer and case-study layouts.
-- Corrected the desktop Services mega-menu so WIN / BUILD / GROW stay in one balanced panel.
+- Corrected the desktop Services mega-menu so COMPETE / BUILD / GROW stay in one balanced panel.
 - Improved mobile touch targets and keyboard focus states.
 - Added reduced-motion handling.
 - Added missing SEO metadata to utility/redirect pages.
@@ -17,7 +17,7 @@ This is the final client-ready static build based on the selected AliothDigital 
 
 ## Main structure
 - `index.html` — Home
-- `services.html` — Services / WIN · BUILD · GROW
+- `services.html` — Services / COMPETE · BUILD · GROW
 - `proposal-development.html` — Bid & Tender Management
 - `recruitment.html` — Recruitment & Talent
 - `digital-marketing.html` — Digital Marketing

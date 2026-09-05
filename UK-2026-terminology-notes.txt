@@ -1,7 +1,7 @@
 ALIOTHDIGITAL — 2026 UK TERMINOLOGY & CONTENT NOTES
 
 Primary customer-facing hierarchy:
-WIN — Proposal & Bid Management
+COMPETE — Proposal & Bid Management
 BUILD — Recruitment & Talent
 GROW — Digital, Software & IT
 
@@ -15,7 +15,7 @@ UK procurement language to favour:
 - clarification questions
 - compliance matrix
 - bid/no-bid decision
-- win themes
+- compete themes
 - evidence / case studies / social value
 - submission readiness / final QA
 - contracting authority / buyer / supplier
