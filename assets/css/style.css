@@ -2033,7 +2033,7 @@ body {
 }
 
 .sector-marquee .sector b {
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(1.05rem, 2vw, 0.35rem);
   letter-spacing: 0
 }
 
@@ -6605,14 +6605,17 @@ body {
 }
 
 .client-logo {
-  display: block;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-logo img {
   max-width: 100%;
-  color: var(--navy-deep);
-  font-family: var(--display);
-  font-size: clamp(1.05rem, 1.9vw, 1.35rem);
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 1.05
+  max-height: 100%;
+  object-fit: contain;
 }
 
 @keyframes clientLogoMarquee {
