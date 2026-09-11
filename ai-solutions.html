@@ -1,31 +1,51 @@
 <!DOCTYPE html>
-<html lang="en-GB"><head><meta charset="utf-8"/><meta name="theme-color" content="#001B3A"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/><meta content="#001B3A" name="theme-color"/><title>AI &amp; Automation | AliothDigital</title><meta name="description" content="Practical AI and automation services for useful workflows, internal tools, knowledge systems and business processes."><meta content="index,follow" name="robots"/><link href="assets/icons/favicon.svg" rel="icon"/><link href="site.webmanifest" rel="manifest"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="assets/css/style.css" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link rel="canonical" href="https://aliothdigital.com/ai-solutions.html"></head><body>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#001B3A">
+<title>AI &amp; Automation | AliothDigital</title>
+<meta name="description" content="Practical AI and automation services for useful workflows, internal tools, knowledge systems and business processes.">
+<link rel="canonical" href="https://aliothdigital.com/ai-solutions">
+<link rel="icon" href="icons/alioth.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
 <div class="topline">
   <div class="container topbar-inner">
-    <span><strong>ALIOTHDIGITAL</strong><i>London · UK</i></span>
-    <span class="topbar-right">COMPETE <b>·</b> BUILD <b>·</b> GROW</span>
+    <span><strong>ALIOTHDIGITAL</strong> <i>London &middot; UK</i></span>
+    <span class="topbar-right">COMPETE <b>&middot;</b> BUILD <b>&middot;</b> GROW</span>
   </div>
 </div>
 
 <header class="site-header" data-header>
   <div class="container nav">
     <a aria-label="AliothDigital home" class="brand" href="index.html">
-      <img alt="AliothDigital" src="assets/images/alioth-logo.png">
+      <img alt="AliothDigital" src="images/alioth-logo.png">
     </a>
 
-    <button class="menu" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+    <button class="menu" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu" data-menu-toggle>
       <span></span><span></span>
     </button>
 
     <nav id="primary-navigation" aria-label="Primary navigation" class="navlinks">
-      <div class="navdrop">
-        <button type="button" aria-expanded="false" aria-haspopup="true">Services <span class="nav-chevron" aria-hidden="true">⌄</span></button>
-        <div class="dropdown mega-menu" role="menu">
+      <div class="navdrop" data-navdrop>
+        <button type="button" aria-expanded="false" aria-haspopup="true" aria-controls="services-menu" data-services-toggle>
+          <span>Services</span>
+          <span class="nav-chevron" aria-hidden="true"></span>
+        </button>
+
+        <div id="services-menu" class="dropdown mega-menu" role="menu" aria-hidden="true">
           <div class="mega-intro">
             <span class="kicker">How we help</span>
-            <h3>Three routes.<br><em>One team.</em></h3>
+            <h3>Three routes. <em>One team.</em></h3>
             <p>Choose the outcome first. We will help you work out the route, the next step and the right level of support.</p>
-            <a class="text-link" href="services.html">View all services <span>↗</span></a>
+            <a class="text-link" href="services.html">View all services <span>&#8599;</span></a>
           </div>
 
           <div class="mega-group compete">
@@ -33,8 +53,14 @@
             <span class="mega-label">COMPETE</span>
             <h4>Bid &amp; Tender Management</h4>
             <p>Make the opportunity easier to understand, shape and submit.</p>
-            <a href="proposal-development.html"><strong>Bid &amp; tender management</strong><small>Opportunity review · response development · compliance · QA</small></a>
-            <a href="upload-tender.html"><strong>Upload a tender</strong><small>Send the pack and deadline. Start with the opportunity.</small></a>
+            <a href="bid-development.html">
+              <strong>Bid &amp; tender management</strong>
+              <small>Opportunity review &middot; response development &middot; compliance &middot; QA</small>
+            </a>
+            <a href="upload-tender.html">
+              <strong>Upload a tender</strong>
+              <small>Send the pack and deadline. Start with the opportunity.</small>
+            </a>
           </div>
 
           <div class="mega-group build">
@@ -42,7 +68,10 @@
             <span class="mega-label">BUILD</span>
             <h4>Recruitment &amp; Talent</h4>
             <p>Find capable people without turning recruitment into CV volume.</p>
-            <a href="recruitment.html"><strong>Recruitment &amp; IT staffing</strong><small>Sourcing · screening · technical capability · placement</small></a>
+            <a href="recruitment.html">
+              <strong>Recruitment &amp; IT staffing</strong>
+              <small>Sourcing &middot; screening &middot; technical capability &middot; placement</small>
+            </a>
           </div>
 
           <div class="mega-group grow">
@@ -51,17 +80,32 @@
             <h4>Digital, Software &amp; IT</h4>
             <p>Practical digital capability for businesses that want to move forward.</p>
             <div class="mega-links">
-              <a href="digital-marketing.html"><strong>Digital marketing</strong><small>SEO · content · campaigns</small></a>
-              <a href="web-development.html"><strong>Web &amp; software</strong><small>Websites · platforms · integrations</small></a>
-              <a href="ai-solutions.html"><strong>AI &amp; automation</strong><small>Useful systems, not AI theatre</small></a>
-              <a href="software-it-services.html"><strong>Software &amp; IT services</strong><small>Support · systems · maintenance</small></a>
-              <a href="graphic-design.html"><strong>Creative &amp; content</strong><small>Brand · design · video</small></a>
+              <a href="digital-marketing.html">
+                <strong>Digital marketing</strong>
+                <small>SEO &middot; content &middot; campaigns</small>
+              </a>
+              <a href="web-development.html">
+                <strong>Web &amp; software</strong>
+                <small>Websites &middot; platforms &middot; integrations</small>
+              </a>
+              <a href="ai-solutions.html">
+                <strong>AI &amp; automation</strong>
+                <small>Useful systems, not AI theatre</small>
+              </a>
+              <a href="software-it-services.html">
+                <strong>Software &amp; IT services</strong>
+                <small>Support &middot; systems &middot; maintenance</small>
+              </a>
+              <a href="graphic-design.html">
+                <strong>Creative &amp; content</strong>
+                <small>Brand &middot; design &middot; video</small>
+              </a>
             </div>
           </div>
 
           <div class="mega-footer">
             <span>Not sure what you need?</span>
-            <a href="contact.html?route=just-talk">Just talk to us <span>↗</span></a>
+            <a href="contact.html?route=just-talk">Just talk to us <span>&#8599;</span></a>
           </div>
         </div>
       </div>
@@ -70,8 +114,115 @@
       <a href="about.html">About</a>
       <a href="insights.html">Insights</a>
       <a href="contact.html">Contact</a>
-      <a class="navcta" href="contact.html">Start a conversation <span>↗</span></a>
+
+      <a class="navcta" href="contact.html">Start a conversation <span>&#8599;</span></a>
     </nav>
   </div>
 </header>
-<main><section class="page-hero"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Ai Solutions</span></nav></div><div class="container"><span class="eyebrow">GROW · AI &amp; Automation</span><h1>Use AI where it actually helps.</h1><p>Practical AI systems, workflow automation and knowledge tools with human oversight and clear ownership.</p><div class="hero-actions"><a class="btn primary" href="contact.html">Talk about your project →</a><button class="btn ghost" data-meeting="">Start a meeting ↗</button></div></div></section><section class="section"><div class="container service-layout"><div class="service-sticky"><span class="kicker">Practical delivery</span><h2>Useful work, not a menu of buzzwords.</h2><p>We start with your goal, constraints and audience. Then we choose the right technology and level of work.</p><a class="btn dark" href="contact.html">Tell us the problem →</a></div><div><div class="service-block"><h3>What we can help with</h3><p>Practical AI systems, workflow automation and knowledge tools with human oversight and clear ownership.</p><div class="service-list"><div>AI assistants</div><div>Workflow automation</div><div>Knowledge search</div><div>LLM integration</div><div>Reporting dashboards</div><div>Human-in-the-loop systems</div></div></div><div class="service-block"><h3>How we work</h3><p>Understand the context → agree the smallest useful plan → build or deliver → review what changed and what should happen next.</p></div><div class="service-block"><h3>What you can expect</h3><p>Clear scope, visible ownership, sensible communication and an outcome you can explain to your own team.</p></div></div></div></section><section class="section dark"><div class="container"><div class="section-head"><div><span class="kicker">The Alioth standard</span><h2 class="title">No unnecessary complexity.</h2></div><p>Good digital work should make the business easier to understand, easier to use or easier to operate.</p></div><div class="process"><div class="step"><b>01</b><h3>Listen</h3><p>Audience, business goal and constraints.</p></div><div class="step"><b>02</b><h3>Make a plan</h3><p>Priorities, deliverables and evidence.</p></div><div class="step"><b>03</b><h3>Build</h3><p>Focused execution with transparent communication.</p></div><div class="step"><b>04</b><h3>Check together</h3><p>Quality check and next recommendation.</p></div></div></div></section></main><script defer="" src="assets/js/main.js"></script><footer class="footer"><div class="container"><div class="footer-grid"><div><img alt="AliothDigital Studios" src="assets/images/alioth-logo.png"/><p>Bid &amp; tender management, recruitment and digital growth for businesses that need the work done properly — with clear ownership and no unnecessary theatre.</p><a class="btn primary" href="contact.html">Start a conversation ↗</a></div><div><h4>Compete</h4><a href="proposal-development.html">Bid &amp; Tender Management</a><a href="upload-tender.html">Upload a Tender</a></div><div><h4>Build</h4><a href="recruitment.html">Recruitment</a><a href="recruitment.html#staffing">IT Staffing</a><a href="contact.html?route=recruitment">Hire with Alioth</a></div><div><h4>Grow</h4><a href="digital-marketing.html">Digital Marketing</a><a href="software-it-services.html">Software &amp; IT Services</a><a href="web-development.html">Web &amp; Software</a><a href="ai-solutions.html">AI &amp; Automation</a><a href="work.html">Client Work</a></div></div><div class="footer-bottom"><span>© 2026 Alioth Digital Studios. All rights reserved.</span><span>86–90 Paul Street, London EC2A 4NE · Registered in England No. 14610211 · <a href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="accessibility.html">Accessibility</a></span></div></div></footer><div aria-label="Cookie notice" class="cookie" id="cookieBanner" role="dialog"><p>We use essential website storage by default. We do not load advertising cookies. <a href="privacy.html"><u>Privacy</u></a></p><div class="cookie-actions"><button data-cookie="">Dismiss</button><button class="accept" data-cookie="">Okay</button></div></div><div aria-hidden="true" class="meeting-panel" id="meetingPanel"><div class="meeting-card"><button aria-label="Close" class="close" data-close-meeting="">×</button><span class="kicker">Start a meeting</span><h2 class="title">What would you like to talk about?</h2><p class="muted">You don't need to know the right service. Tell us what is happening and we'll help you find the route.</p><div class="meeting-options"><a class="meeting-option" href="contact.html?route=proposal"><b>COMPETE</b><span>I have a tender, ITT, RFP or proposal.</span></a><a class="meeting-option" href="contact.html?route=recruitment"><b>BUILD</b><span>I need to hire someone.</span></a><a class="meeting-option" href="contact.html?route=grow"><b>GROW</b><span>I need digital or marketing help.</span></a><a class="meeting-option" href="contact.html?route=just-talk"><b>JUST TALK</b><span>I'm figuring it out and want a conversation.</span></a></div></div></div></body></html>
+
+<main>
+
+<section class="page-hero"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Ai Solutions</span></nav></div>
+<div class="container"><span class="eyebrow">GROW &middot; AI &amp; Automation</span><h1>Use AI where it actually helps.</h1><p>Practical AI systems, workflow automation and knowledge tools with human oversight and clear ownership.</p>
+<div class="hero-actions"><a class="btn primary" href="contact.html">Talk about your project &rarr;</a><button class="btn ghost" data-meeting>Start a meeting &#8599;</button></div></div></section>
+<section class="section"><div class="container service-layout">
+<div class="service-sticky"><span class="kicker">Practical delivery</span><h2>Useful work, not a menu of buzzwords.</h2><p>We start with your goal, constraints and audience. Then we choose the right technology and level of work.</p><a class="btn dark" href="contact.html">Tell us the problem &rarr;</a></div>
+<div>
+<div class="service-block"><h3>What we can help with</h3><p>Practical AI systems, workflow automation and knowledge tools with human oversight and clear ownership.</p>
+<div class="service-list"><div>AI assistants</div>
+<div>Workflow automation</div>
+<div>Knowledge search</div>
+<div>LLM integration</div>
+<div>Reporting dashboards</div>
+<div>Human-in-the-loop systems</div></div>
+</div>
+<div class="service-block"><h3>How we work</h3><p>Understand the context &rarr; agree the smallest useful plan &rarr; build or deliver &rarr; review what changed and what should happen next.</p></div>
+<div class="service-block"><h3>What you can expect</h3><p>Clear scope, visible ownership, sensible communication and an outcome you can explain to your own team.</p></div>
+</div>
+</div></section>
+<section class="section dark"><div class="container">
+<div class="section-head"><div><span class="kicker">The Alioth standard</span><h2 class="title">No unnecessary complexity.</h2></div><p>Good digital work should make the business easier to understand, easier to use or easier to operate.</p></div>
+<div class="process">
+<div class="step"><b>01</b><h3>Listen</h3><p>Audience, business goal and constraints.</p></div>
+<div class="step"><b>02</b><h3>Make a plan</h3><p>Priorities, deliverables and evidence.</p></div>
+<div class="step"><b>03</b><h3>Build</h3><p>Focused execution with transparent communication.</p></div>
+<div class="step"><b>04</b><h3>Check together</h3><p>Quality check and next recommendation.</p></div>
+</div>
+</div></section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img alt="AliothDigital Studios" src="images/alioth-logo.png">
+        <p>Bid &amp; tender management, recruitment and digital growth for businesses that need the work done properly &mdash; with clear ownership and no unnecessary theatre.</p>
+        <a class="btn primary" href="contact.html">Start a conversation &#8599;</a>
+      </div>
+      <div>
+        <h4>Compete</h4>
+        <a href="bid-development.html">Bid &amp; Tender Management</a>
+        <a href="upload-tender.html">Upload a Tender</a>
+      </div>
+      <div>
+        <h4>Build</h4>
+        <a href="recruitment.html">Recruitment</a>
+        <a href="recruitment.html#staffing">IT Staffing</a>
+        <a href="contact.html?route=recruitment">Hire with Alioth</a>
+      </div>
+      <div>
+        <h4>Grow</h4>
+        <a href="digital-marketing.html">Digital Marketing</a>
+        <a href="software-it-services.html">Software &amp; IT Services</a>
+        <a href="web-development.html">Web &amp; Software</a>
+        <a href="ai-solutions.html">AI &amp; Automation</a>
+        <a href="work.html">Client Work</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Alioth Digital Studios. All rights reserved.</span>
+      <span>86&ndash;90 Paul Street, London EC2A 4NE &middot; Registered in England No. 14610211 &middot; <a href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></span>
+      <span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="accessibility.html">Accessibility</a></span>
+    </div>
+  </div>
+</footer>
+
+<div aria-label="Cookie notice" class="cookie" id="cookieBanner" role="dialog">
+  <p>We use essential website storage by default. We do not load advertising cookies. <a href="privacy.html"><u>Privacy</u></a></p>
+  <div class="cookie-actions">
+    <button data-cookie>Dismiss</button>
+    <button class="accept" data-cookie>Okay</button>
+  </div>
+</div>
+
+<div aria-hidden="true" class="meeting-panel" id="meetingPanel">
+  <div class="meeting-card">
+    <button aria-label="Close" class="close" data-close-meeting type="button">&times;</button>
+    <span class="kicker">Start a meeting</span>
+    <h2 class="title">What would you like to talk about?</h2>
+    <p class="muted">You don't need to know the right service. Tell us what is happening and we'll help you find the route.</p>
+    <div class="meeting-options">
+      <a class="meeting-option" href="contact.html?route=proposal">
+        <b>COMPETE</b>
+        <span>I have a tender, ITT, RFP or proposal.</span>
+      </a>
+      <a class="meeting-option" href="contact.html?route=recruitment">
+        <b>BUILD</b>
+        <span>I need to hire someone.</span>
+      </a>
+      <a class="meeting-option" href="contact.html?route=grow">
+        <b>GROW</b>
+        <span>I need digital or marketing help.</span>
+      </a>
+      <a class="meeting-option" href="contact.html?route=just-talk">
+        <b>JUST TALK</b>
+        <span>I'm figuring it out and want a conversation.</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

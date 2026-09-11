@@ -1,8 +1,47 @@
-AliothDigital Studios
-London, UK
-Website: https://aliothdigital.com/
+# AliothDigital
+
+> AliothDigital Studios is a London-based business helping UK organisations
+> in three ways: COMPETE (bid & tender management), BUILD (recruitment &
+> IT staffing), and GROW (digital marketing, web/software development, AI &
+> automation, IT support, and creative/content services). The company
+> favours clear scope, visible ownership and practical delivery over
+> agency jargon.
+
+## Company
+
+- [About](https://aliothdigital.com/about.html): Who AliothDigital is and how the COMPETE/BUILD/GROW model works.
+- [Services overview](https://aliothdigital.com/services.html): The three routes (COMPETE, BUILD, GROW) and the specialist services behind each.
+- [Work](https://aliothdigital.com/work.html): Selected client case studies (Medecon, BKMA, Smart Flow Engineering, DocAcquire, Centennial Workshop, Bonny Arts, eventezi, Persian Dowry).
+- [Insights](https://aliothdigital.com/insights.html): Short practical articles on bidding, hiring and digital work.
+- [Contact](https://aliothdigital.com/contact.html): Enquiry form, tender upload, meeting booking, office details.
+
+## COMPETE — Bid & Tender Management
+
+- [Bid & Tender Management](https://aliothdigital.com/bid-development.html): Opportunity review, tender analysis, proposal development, compliance mapping, QA and submission readiness for UK public/private/third-sector procurement.
+- [Upload a Tender](https://aliothdigital.com/upload-tender.html): Direct form to send a tender pack, deadline and requirement for review.
+
+## BUILD — Recruitment & Talent
+
+- [Recruitment & IT Staffing](https://aliothdigital.com/recruitment.html): Role definition, targeted sourcing, screening, shortlisting and IT/technology staffing.
+
+## GROW — Digital, Software & IT
+
+- [Software & IT Services (overview)](https://aliothdigital.com/software-it-services.html): The GROW practice umbrella covering all services below.
+- [Digital Marketing](https://aliothdigital.com/digital-marketing.html): SEO, content, paid campaigns, analytics, social and email marketing.
+- [Web & Software Development](https://aliothdigital.com/web-development.html): Websites, e-commerce, WordPress, custom front-end, API integrations.
+- [Web & IT Support](https://aliothdigital.com/web-maintenance.html): Ongoing maintenance, security updates, backups, monitoring, performance.
+- [AI & Automation](https://aliothdigital.com/ai-solutions.html): AI assistants, workflow automation, knowledge search, LLM integration, human-in-the-loop systems.
+- [Graphic Design / Creative & Content](https://aliothdigital.com/graphic-design.html): Brand identity, presentation decks, brochures, campaign assets.
+- [Video Editing](https://aliothdigital.com/video-editing.html): Social, corporate and product video editing, motion graphics.
+- [WordPress & Integrations](https://aliothdigital.com/wordpress-plugins.html): Custom plugins, payment gateways, CRM integrations, workflow automation.
+
+## Legal
+
+- [Privacy](https://aliothdigital.com/privacy.html)
+- [Terms](https://aliothdigital.com/terms.html)
+- [Accessibility](https://aliothdigital.com/accessibility.html)
+
+## Contact
+
+Alioth Digital Studios, 86–90 Paul Street, London EC2A 4NE, United Kingdom.
 Email: hello@aliothdigital.com
-Address: 86–90 Paul Street, London EC2A 4NE, United Kingdom
-Company number: 14610211
-Core services: Proposal & Bid Management; Recruitment & IT Staffing; Digital Marketing; Web Development; AI & Automation; Creative; Web Maintenance.
-Primary proposal sectors: NHS & healthcare, central government, local authorities, education, housing & social care, construction & infrastructure, technology, professional services, charities and other UK procurement.

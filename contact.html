@@ -2,56 +2,58 @@
 <html lang="en-GB">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="theme-color" content="#001B3A" />
-  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport" />
-  <meta content="#001B3A" name="theme-color" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#001B3A">
   <title>Contact AliothDigital | London</title>
   <meta name="description"
     content="Talk to AliothDigital in London about a tender, hiring need, digital project, software or IT requirement.">
-  <meta content="index,follow" name="robots" />
-  <link href="assets/icons/favicon.svg" rel="icon" />
-  <link href="site.webmanifest" rel="manifest" />
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link rel="canonical" href="https://aliothdigital.com/contact">
+  <link rel="icon" href="icons/alioth.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet" />
-  <link rel="canonical" href="https://aliothdigital.com/contact.html">
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <div class="topline">
     <div class="container topbar-inner">
-      <span><strong>ALIOTHDIGITAL</strong><i>London · UK</i></span>
-      <span class="topbar-right">COMPETE <b>·</b> BUILD <b>·</b> GROW</span>
+      <span><strong>ALIOTHDIGITAL</strong> <i>London &middot; UK</i></span>
+      <span class="topbar-right">COMPETE <b>&middot;</b> BUILD <b>&middot;</b> GROW</span>
     </div>
   </div>
 
   <header class="site-header" data-header>
     <div class="container nav">
       <a aria-label="AliothDigital home" class="brand" href="index.html">
-        <img alt="AliothDigital" src="assets/images/alioth-logo.png">
+        <img alt="AliothDigital" src="images/alioth-logo.png">
       </a>
 
-      <button class="menu" type="button" aria-expanded="false" aria-controls="primary-navigation"
-        aria-label="Open menu">
+      <button class="menu" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu"
+        data-menu-toggle>
         <span></span><span></span>
       </button>
 
       <nav id="primary-navigation" aria-label="Primary navigation" class="navlinks">
-        <div class="navdrop">
-          <button type="button" aria-expanded="false" aria-haspopup="true">Services <span class="nav-chevron"
-              aria-hidden="true">⌄</span></button>
-          <div class="dropdown mega-menu" role="menu">
+        <div class="navdrop" data-navdrop>
+          <button type="button" aria-expanded="false" aria-haspopup="true" aria-controls="services-menu"
+            data-services-toggle>
+            <span>Services</span>
+            <span class="nav-chevron" aria-hidden="true"></span>
+          </button>
+
+          <div id="services-menu" class="dropdown mega-menu" role="menu" aria-hidden="true">
             <div class="mega-intro">
               <span class="kicker">How we help</span>
-              <h3>Three routes.<br><em>One team.</em></h3>
+              <h3>Three routes. <em>One team.</em></h3>
               <p>Choose the outcome first. We will help you work out the route, the next step and the right level of
                 support.</p>
-              <a class="text-link" href="services.html">View all services <span>↗</span></a>
+              <a class="text-link" href="services.html">View all services <span>&#8599;</span></a>
             </div>
 
             <div class="mega-group compete">
@@ -59,10 +61,14 @@
               <span class="mega-label">COMPETE</span>
               <h4>Bid &amp; Tender Management</h4>
               <p>Make the opportunity easier to understand, shape and submit.</p>
-              <a href="proposal-development.html"><strong>Bid &amp; tender management</strong><small>Opportunity review
-                  · response development · compliance · QA</small></a>
-              <a href="upload-tender.html"><strong>Upload a tender</strong><small>Send the pack and deadline. Start with
-                  the opportunity.</small></a>
+              <a href="bid-development.html">
+                <strong>Bid &amp; tender management</strong>
+                <small>Opportunity review &middot; response development &middot; compliance &middot; QA</small>
+              </a>
+              <a href="upload-tender.html">
+                <strong>Upload a tender</strong>
+                <small>Send the pack and deadline. Start with the opportunity.</small>
+              </a>
             </div>
 
             <div class="mega-group build">
@@ -70,8 +76,10 @@
               <span class="mega-label">BUILD</span>
               <h4>Recruitment &amp; Talent</h4>
               <p>Find capable people without turning recruitment into CV volume.</p>
-              <a href="recruitment.html"><strong>Recruitment &amp; IT staffing</strong><small>Sourcing · screening ·
-                  technical capability · placement</small></a>
+              <a href="recruitment.html">
+                <strong>Recruitment &amp; IT staffing</strong>
+                <small>Sourcing &middot; screening &middot; technical capability &middot; placement</small>
+              </a>
             </div>
 
             <div class="mega-group grow">
@@ -80,22 +88,32 @@
               <h4>Digital, Software &amp; IT</h4>
               <p>Practical digital capability for businesses that want to move forward.</p>
               <div class="mega-links">
-                <a href="digital-marketing.html"><strong>Digital marketing</strong><small>SEO · content ·
-                    campaigns</small></a>
-                <a href="web-development.html"><strong>Web &amp; software</strong><small>Websites · platforms ·
-                    integrations</small></a>
-                <a href="ai-solutions.html"><strong>AI &amp; automation</strong><small>Useful systems, not AI
-                    theatre</small></a>
-                <a href="software-it-services.html"><strong>Software &amp; IT services</strong><small>Support · systems
-                    · maintenance</small></a>
-                <a href="graphic-design.html"><strong>Creative &amp; content</strong><small>Brand · design ·
-                    video</small></a>
+                <a href="digital-marketing.html">
+                  <strong>Digital marketing</strong>
+                  <small>SEO &middot; content &middot; campaigns</small>
+                </a>
+                <a href="web-development.html">
+                  <strong>Web &amp; software</strong>
+                  <small>Websites &middot; platforms &middot; integrations</small>
+                </a>
+                <a href="ai-solutions.html">
+                  <strong>AI &amp; automation</strong>
+                  <small>Useful systems, not AI theatre</small>
+                </a>
+                <a href="software-it-services.html">
+                  <strong>Software &amp; IT services</strong>
+                  <small>Support &middot; systems &middot; maintenance</small>
+                </a>
+                <a href="graphic-design.html">
+                  <strong>Creative &amp; content</strong>
+                  <small>Brand &middot; design &middot; video</small>
+                </a>
               </div>
             </div>
 
             <div class="mega-footer">
               <span>Not sure what you need?</span>
-              <a href="contact.html?route=just-talk">Just talk to us <span>↗</span></a>
+              <a href="contact.html?route=just-talk">Just talk to us <span>&#8599;</span></a>
             </div>
           </div>
         </div>
@@ -104,74 +122,104 @@
         <a href="about.html">About</a>
         <a href="insights.html">Insights</a>
         <a href="contact.html">Contact</a>
-        <a class="navcta" href="contact.html">Start a conversation <span>↗</span></a>
+
+        <a class="navcta" href="contact.html">Start a conversation <span>&#8599;</span></a>
       </nav>
     </div>
   </header>
+
   <main>
+
     <section class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span
             aria-hidden="true">/</span><span>Contact</span></nav>
       </div>
-      <div class="container"><span class="eyebrow">Start here</span>
-        <h1>Tell us what<br /><span class="accent">needs doing.</span></h1>
+      <div class="container">
+        <span class="eyebrow">Start here</span>
+        <h1>Tell us what<br><span class="accent">needs doing.</span></h1>
         <p>Bring a tender, a role, a website problem or the question you are trying to answer. We'll take it from there.
         </p>
-      </div><button class="btn ghost" data-meeting="">Start a meeting ↗</button>
+        <div class="hero-actions"><a href="#book-meeting" class="btn ghost">Start a meeting &#8599;</a></div>
+      </div>
     </section>
+
+    <section class="section booking-section" id="book-meeting">
+      <div class="container">
+        <div class="booking-header">
+          <span class="kicker">BOOK A CONVERSATION</span>
+          <h2 class="title">Let's talk about<br><span class="accent">what you need.</span></h2>
+          <p class="muted">Choose a time that works for you. We'll use the first conversation to understand your
+            requirements, answer your questions and work out the best way forward.</p>
+        </div>
+        <div class="calendly-wrapper">
+          <iframe src="https://calendly.com/aliothdigital/30min" width="100%" height="700" frameborder="0"
+            title="Book a meeting with AliothDigital"></iframe>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container" style="display:grid;grid-template-columns:.75fr 1.25fr;gap:70px">
-        <div><span class="kicker">A useful first conversation</span>
+        <div>
+          <span class="kicker">A useful first conversation</span>
           <h2 class="title">No sales maze.</h2>
           <p class="muted">Email us directly or use the form. For tenders, the upload route below is usually the fastest
             way to give us context.</p>
-          <p><strong>Email</strong><br /><a href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></p>
-          <p><strong>Address</strong><br />86–90 Paul Street<br />London EC2A 4NE<br />United Kingdom</p>
-          <p class="muted"><strong>Office hours</strong><br />Mon–Fri: 9am–6pm<br />Sat: 10am–2pm<br />Sun: Closed</p>
+          <p><strong>Email</strong><br><a href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></p>
+          <p><strong>Address</strong><br>86&ndash;90 Paul Street<br>London EC2A 4NE<br>United Kingdom</p>
+          <p class="muted"><strong>Office hours</strong><br>Mon&ndash;Fri: 9am&ndash;6pm<br>Sat: 10am&ndash;2pm<br>Sun:
+            Closed</p>
           <div style="border:1px solid var(--line);padding:16px;font-size:.8rem;color:var(--muted)">Please do not send
             classified information or sensitive personal data through a website form.</div>
         </div>
         <div>
-          <form action="https://formsubmit.co/hello@aliothdigital.com" class="form" data-validate=""
+          <form action="https://formsubmit.co/hello@aliothdigital.com" class="form" data-validate
             enctype="multipart/form-data" method="POST">
-            <input name="_subject" type="hidden" value="AliothDigital website enquiry" />
-            <input name="_captcha" type="hidden" value="false" />
-            <input name="_template" type="hidden" value="table" />
-            <input name="_next" type="hidden" value="https://aliothdigital.com/thank-you.html" />
-            <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text" />
+            <input name="_subject" type="hidden" value="AliothDigital website enquiry">
+            <input name="_captcha" type="hidden" value="false">
+            <input name="_template" type="hidden" value="table">
+            <input name="_next" type="hidden" value="https://aliothdigital.com/thank-you.html">
+            <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text">
             <div class="form-grid">
-              <div class="field"><label for="first">First name *</label><input id="first" name="first_name"
-                  required="" /></div>
-              <div class="field"><label for="last">Last name</label><input id="last" name="last_name" /></div>
+              <div class="field"><label for="first">First name *</label><input id="first" name="first_name" required>
+              </div>
+              <div class="field"><label for="last">Last name</label><input id="last" name="last_name"></div>
             </div>
             <div class="form-grid">
-              <div class="field"><label for="email">Email *</label><input id="email" name="email" required=""
-                  type="email" /></div>
-              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" /></div>
+              <div class="field"><label for="email">Email *</label><input id="email" name="email" required type="email">
+              </div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
             </div>
-            <div class="field"><label for="route">What can we help with? *</label><select id="route" name="route"
-                required="">
+            <div class="field">
+              <label for="route">What can we help with? *</label>
+              <select id="route" name="route" required>
                 <option value="">Select a route</option>
-                <option>COMPETE — Proposal / Bid</option>
-                <option>BUILD — Recruitment / Staffing</option>
-                <option>GROW — Digital / Marketing</option>
+                <option>COMPETE &mdash; Proposal / Bid</option>
+                <option>BUILD &mdash; Recruitment / Staffing</option>
+                <option>GROW &mdash; Digital / Marketing</option>
                 <option>Something else</option>
-              </select></div>
-            <div class="field"><label for="message">Tell us what is happening *</label><textarea id="message"
-                name="message"
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Tell us what is happening *</label>
+              <textarea id="message" name="message"
                 placeholder="A few lines is enough. Include the deadline if this is a tender or the role if this is recruitment."
-                required=""></textarea></div><button class="btn dark" type="submit">Send enquiry →</button>
+                required></textarea>
+            </div>
+            <button class="btn dark" type="submit">Send enquiry &rarr;</button>
             <p class="muted" style="font-size:.76rem">By submitting, you agree that AliothDigital can use the
               information to respond to your enquiry. See our <a href="privacy.html"><u>privacy notice</u></a>.</p>
           </form>
         </div>
       </div>
     </section>
+
     <section class="section dark" id="upload">
       <div class="container">
         <div class="upload-layout">
-          <div><span class="kicker">COMPETE · Upload a tender</span>
+          <div>
+            <span class="kicker">COMPETE &middot; Upload a tender</span>
             <h2 class="title">Send the opportunity, not a sales pitch.</h2>
             <p style="color:#b6c1c6;max-width:580px">Upload an RFP, ITT, tender pack, framework document or scope. Tell
               us the deadline and what you want help with. The form sends the attachment to our business email through
@@ -180,77 +228,108 @@
               upload classified material, special-category personal data or information you are not authorised to share.
             </p>
           </div>
-          <form action="https://formsubmit.co/hello@aliothdigital.com" class="form" data-validate=""
-            enctype="multipart/form-data" method="POST"><input name="_subject" type="hidden"
-              value="Tender upload — AliothDigital" /><input name="_captcha" type="hidden" value="false" /><input
-              name="_template" type="hidden" value="table" /><input name="_next" type="hidden"
-              value="https://aliothdigital.com/thank-you.html" /><input autocomplete="off" name="_honey"
-              style="display:none" tabindex="-1" type="text" />
-            <div class="field"><label for="tenderName">Name *</label><input id="tenderName" name="name" required="" />
-            </div>
-            <div class="field"><label for="tenderEmail">Email *</label><input id="tenderEmail" name="email" required=""
-                type="email" /></div>
+          <form action="https://formsubmit.co/hello@aliothdigital.com" class="form" data-validate
+            enctype="multipart/form-data" method="POST">
+            <input name="_subject" type="hidden" value="Tender upload &mdash; AliothDigital">
+            <input name="_captcha" type="hidden" value="false">
+            <input name="_template" type="hidden" value="table">
+            <input name="_next" type="hidden" value="https://aliothdigital.com/thank-you.html">
+            <input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text">
+            <div class="field"><label for="tenderName">Name *</label><input id="tenderName" name="name" required></div>
+            <div class="field"><label for="tenderEmail">Email *</label><input id="tenderEmail" name="email" required
+                type="email"></div>
             <div class="field"><label for="deadline">Tender deadline</label><input id="deadline" name="deadline"
-                type="date" /></div>
-            <div class="field"><label for="tenderFile">Tender file *</label><input
-                accept=".pdf,.doc,.docx,.xls,.xlsx,.zip" id="tenderFile" name="attachment" required="" type="file" />
+                type="date"></div>
+            <div class="field">
+              <label for="tenderFile">Tender file *</label>
+              <input accept=".pdf,.doc,.docx,.xls,.xlsx,.zip" id="tenderFile" name="attachment" required type="file">
               <div class="file-note" id="fileName">No file selected.</div>
-            </div><button class="btn primary" type="submit">Upload tender →</button>
+            </div>
+            <button class="btn primary" type="submit">Upload tender &rarr;</button>
           </form>
         </div>
       </div>
     </section>
+
   </main>
-  <script defer="" src="assets/js/main.js"></script>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div><img alt="AliothDigital Studios" src="assets/images/alioth-logo.png" />
+        <div>
+          <img alt="AliothDigital Studios" src="images/alioth-logo.png">
           <p>Bid &amp; tender management, recruitment and digital growth for businesses that need the work done properly
-            — with clear ownership and no unnecessary theatre.</p><a class="btn primary" href="contact.html">Start a
-            conversation ↗</a>
+            &mdash; with clear ownership and no unnecessary theatre.</p>
+          <a class="btn primary" href="contact.html">Start a conversation &#8599;</a>
         </div>
         <div>
-          <h4>Compete</h4><a href="proposal-development.html">Bid &amp; Tender Management</a><a
-            href="upload-tender.html">Upload a Tender</a>
+          <h4>Compete</h4>
+          <a href="bid-development.html">Bid &amp; Tender Management</a>
+          <a href="upload-tender.html">Upload a Tender</a>
         </div>
         <div>
-          <h4>Build</h4><a href="recruitment.html">Recruitment</a><a href="recruitment.html#staffing">IT Staffing</a><a
-            href="contact.html?route=recruitment">Hire with Alioth</a>
+          <h4>Build</h4>
+          <a href="recruitment.html">Recruitment</a>
+          <a href="recruitment.html#staffing">IT Staffing</a>
+          <a href="contact.html?route=recruitment">Hire with Alioth</a>
         </div>
         <div>
-          <h4>Grow</h4><a href="digital-marketing.html">Digital Marketing</a><a
-            href="software-it-services.html">Software &amp; IT Services</a><a href="web-development.html">Web &amp;
-            Software</a><a href="ai-solutions.html">AI &amp; Automation</a><a href="work.html">Client Work</a>
+          <h4>Grow</h4>
+          <a href="digital-marketing.html">Digital Marketing</a>
+          <a href="software-it-services.html">Software &amp; IT Services</a>
+          <a href="web-development.html">Web &amp; Software</a>
+          <a href="ai-solutions.html">AI &amp; Automation</a>
+          <a href="work.html">Client Work</a>
         </div>
       </div>
-      <div class="footer-bottom"><span>© 2026 Alioth Digital Studios. All rights reserved.</span><span>86–90 Paul
-          Street, London EC2A 4NE · Registered in England No. 14610211 · <a
-            href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></span><span><a
-            href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a
-            href="accessibility.html">Accessibility</a></span></div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Alioth Digital Studios. All rights reserved.</span>
+        <span>86&ndash;90 Paul Street, London EC2A 4NE &middot; Registered in England No. 14610211 &middot; <a
+            href="mailto:hello@aliothdigital.com">hello@aliothdigital.com</a></span>
+        <span><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a
+            href="accessibility.html">Accessibility</a></span>
+      </div>
     </div>
   </footer>
+
   <div aria-label="Cookie notice" class="cookie" id="cookieBanner" role="dialog">
     <p>We use essential website storage by default. We do not load advertising cookies. <a
         href="privacy.html"><u>Privacy</u></a></p>
-    <div class="cookie-actions"><button data-cookie="">Dismiss</button><button class="accept"
-        data-cookie="">Okay</button></div>
+    <div class="cookie-actions">
+      <button data-cookie>Dismiss</button>
+      <button class="accept" data-cookie>Okay</button>
+    </div>
   </div>
+
   <div aria-hidden="true" class="meeting-panel" id="meetingPanel">
-    <div class="meeting-card"><button aria-label="Close" class="close" data-close-meeting="">×</button><span
-        class="kicker">Start a meeting</span>
+    <div class="meeting-card">
+      <button aria-label="Close" class="close" data-close-meeting type="button">&times;</button>
+      <span class="kicker">Start a meeting</span>
       <h2 class="title">What would you like to talk about?</h2>
       <p class="muted">You don't need to know the right service. Tell us what is happening and we'll help you find the
         route.</p>
-      <div class="meeting-options"><a class="meeting-option" href="contact.html?route=proposal"><b>COMPETE</b><span>I have a
-            tender, ITT, RFP or proposal.</span></a><a class="meeting-option"
-          href="contact.html?route=recruitment"><b>BUILD</b><span>I need to hire someone.</span></a><a
-          class="meeting-option" href="contact.html?route=grow"><b>GROW</b><span>I need digital or marketing
-            help.</span></a><a class="meeting-option" href="contact.html?route=just-talk"><b>JUST TALK</b><span>I'm
-            figuring it out and want a conversation.</span></a></div>
+      <div class="meeting-options">
+        <a class="meeting-option" href="contact.html?route=proposal">
+          <b>COMPETE</b>
+          <span>I have a tender, ITT, RFP or proposal.</span>
+        </a>
+        <a class="meeting-option" href="contact.html?route=recruitment">
+          <b>BUILD</b>
+          <span>I need to hire someone.</span>
+        </a>
+        <a class="meeting-option" href="contact.html?route=grow">
+          <b>GROW</b>
+          <span>I need digital or marketing help.</span>
+        </a>
+        <a class="meeting-option" href="contact.html?route=just-talk">
+          <b>JUST TALK</b>
+          <span>I'm figuring it out and want a conversation.</span>
+        </a>
+      </div>
     </div>
   </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

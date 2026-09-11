@@ -1,1 +1,8 @@
-{"name":"AliothDigital Studios","short_name":"AliothDigital","start_url":"/","display":"standalone","background_color":"#071018","theme_color":"#071018","icons":[{"src":"/assets/icons/favicon.svg","sizes":"any","type":"image/svg+xml"}]}
+{
+  "name": "AliothDigital",
+  "short_name": "AliothDigital",
+  "icons": [{ "src": "icons/alioth.png", "sizes": "64x64", "type": "image/png" }],
+  "theme_color": "#001B3A",
+  "background_color": "#001B3A",
+  "display": "standalone"
+}
