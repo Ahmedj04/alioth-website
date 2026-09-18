@@ -5892,7 +5892,7 @@ body {
 .hero--landing .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("/images/landing-hero.png") center / cover no-repeat;
+  background: url("../images/landing-hero.png") center / cover no-repeat;
   z-index: 0;
 }
 
