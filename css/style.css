@@ -629,15 +629,18 @@ body {
 
 .hero h1 {
   font-family: var(--display);
-  font-size: clamp(4.4rem, 9.5vw, 7.6rem);
-  line-height: .79;
+  /* font-size: clamp(4.4rem, 9.5vw, 7.6rem); */
+  font-size: clamp(4.4rem, 9.5vw, 5.6rem);
+  /* font-size: 90px; */
+  /* line-height: .79; */
+  line-height: 1;
   letter-spacing: -.09em;
   margin: 22px 0 32px;
-  max-width: 900px
+  /* max-width: 900px */
 }
 
 .hero h1 span {
-  display: block;
+  /* display: block; */
   color: var(--cyan)
 }
 
@@ -646,6 +649,10 @@ body {
   font-size: 1.06rem;
   color: #c1cdd2;
   line-height: 1.8
+}
+.hero-copy strong {
+  color: var(--white);
+  font-weight: 800;
 }
 
 .hero-actions {
@@ -5868,4 +5875,215 @@ body {
 
 @media(max-width:520px) {
   .talent-steps { grid-template-columns: 1fr; }
+}
+
+/* ========== LANDING HERO – FULL BACKGROUND IMAGE ========== */
+.hero--landing {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* The actual photo */
+.hero--landing .hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url("/images/landing-hero.png") center / cover no-repeat;
+  z-index: 0;
+}
+
+/* Dark gradient so left text is readable while photo still shows on the right */
+.hero--landing .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      105deg,
+      rgba(0, 14, 32, 0.97) 0%,
+      rgba(0, 14, 32, 0.92) 38%,
+      rgba(0, 14, 32, 0.55) 62%,
+      rgba(0, 14, 32, 0.25) 100%
+    );
+  z-index: 1;
+}
+
+/* Content sits above the overlay */
+.hero--landing .hero-grid,
+.hero--landing .hero-services {
+  position: relative;
+  z-index: 2;
+}
+
+.hero--landing .hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: clamp(110px, 13vw, 150px);
+  padding-bottom: 56px;
+}
+
+.hero--landing .hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 28px;
+}
+
+.hero--landing .hero-eyebrow .line {
+  width: 28px;
+  height: 2px;
+  background: var(--cyan);
+  flex-shrink: 0;
+}
+
+.hero--landing h1 {
+  font-family: var(--display);
+  font-size: clamp(3.5rem, 7vw, 5.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  margin: 0 0 26px;
+  font-weight: 800;
+}
+
+.hero--landing h1 .accent-cyan {
+  color: var(--cyan);
+  display: block;
+}
+
+.hero--landing h1 .accent-orange {
+  color: var(--orange);
+}
+
+.hero--landing .hero-copy {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.72);
+  max-width: 510px;
+  margin: 0 0 34px;
+}
+
+.hero--landing .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero--landing .btn.primary {
+  background: linear-gradient(100deg, var(--orange), #ff8a3d) !important;
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 15px 24px;
+  font-weight: 800;
+  box-shadow: 0 8px 24px rgba(255,102,0,0.28);
+}
+
+.hero--landing .btn.ghost {
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  background: transparent;
+  border-radius: 6px;
+  padding: 15px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero--landing .btn.ghost:hover {
+  border-color: var(--cyan);
+  background: rgba(0,205,255,0.1);
+}
+
+/* THREE SERVICE CARDS */
+.hero--landing .hero-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,10,24,0.55);
+  backdrop-filter: blur(14px);
+}
+
+.hero--landing .hero-service-card {
+  display: flex;
+  gap: 16px;
+  padding: 30px 26px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  transition: background 0.3s ease;
+}
+
+.hero--landing .hero-service-card:last-child {
+  border-right: 0;
+}
+
+.hero--landing .hero-service-card:hover {
+  background: rgba(0,20,45,0.6);
+}
+
+.hero--landing .hero-service-card .icon {
+  flex-shrink: 0;
+  color: var(--cyan);
+  margin-top: 2px;
+}
+
+.hero--landing .hero-service-card strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.hero--landing .hero-service-card p {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.65);
+  max-width: 270px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1100px) {
+  .hero--landing .hero-grid {
+    padding-top:60px;
+    padding-bottom: 40px;
+  }
+  .hero--landing .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0,14,32,0.92) 0%,
+      rgba(0,14,32,0.85) 60%,
+      rgba(0,14,32,0.75) 100%
+    );
+  }
+}
+
+@media (max-width: 800px) {
+  .hero--landing .hero-services {
+    grid-template-columns: 1fr;
+  }
+  .hero--landing .hero-service-card {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 22px 18px;
+  }
+  .hero--landing h1 {
+    font-size: clamp(2.8rem, 11vw, 4rem);
+  }
+  .hero--landing .hero-actions {
+    flex-direction: column;
+  }
+  .hero--landing .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
