@@ -6902,3 +6902,59 @@ body {
     margin-bottom: 24px;
   }
 }
+
+/* Keep the location bar and primary navigation visible as a single stack. */
+:root {
+  --topline-height: 30px;
+  --site-header-height: 82px;
+  --site-chrome-height: calc(var(--topline-height) + var(--site-header-height));
+}
+
+html {
+  scroll-padding-top: var(--site-chrome-height);
+}
+
+body {
+  padding-top: var(--site-chrome-height);
+}
+
+.topline {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 6001;
+  height: var(--topline-height);
+}
+
+.topline .container {
+  height: 100%;
+  align-items: center;
+  padding-block: 0;
+}
+
+.site-header {
+  position: fixed;
+  top: var(--topline-height);
+  right: 0;
+  left: 0;
+  height: var(--site-header-height);
+  z-index: 6000;
+}
+
+.site-header .nav {
+  height: var(--site-header-height);
+}
+
+@media (max-width: 980px) {
+  :root {
+    --site-header-height: 72px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --site-header-height: 68px;
+  }
+}
