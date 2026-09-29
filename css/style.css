@@ -2522,6 +2522,14 @@ textarea {
   letter-spacing: .14em
 }
 
+.uk-flag {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  vertical-align: -1px;
+  object-fit: cover;
+}
+
 .topbar-inner i {
   font-style: normal;
   margin-left: 10px;
@@ -2636,8 +2644,7 @@ textarea {
 }
 
 .premium-hero {
-  padding: 24px 0 105px;
-  min-height: 570px;
+  padding: 24px 0 24px;
   position: relative;
   overflow: hidden
 }
@@ -5880,7 +5887,6 @@ body {
 /* ========== LANDING HERO – FULL BACKGROUND IMAGE ========== */
 .hero--landing {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -5921,7 +5927,7 @@ body {
 .hero--landing .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  padding-top: clamp(110px, 13vw, 150px);
+  padding-top: clamp(0px, 13vw, 20px);
   padding-bottom: 56px;
 }
 
@@ -5930,7 +5936,7 @@ body {
   align-items: center;
   gap: 14px;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.78);
@@ -5942,6 +5948,12 @@ body {
   height: 2px;
   background: var(--cyan);
   flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .hero--landing .hero-eyebrow .line {
+    display: none;
+  }
 }
 
 .hero--landing h1 {
@@ -6054,7 +6066,7 @@ body {
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1100px) {
   .hero--landing .hero-grid {
-    padding-top:60px;
+    padding-top:0px;
     padding-bottom: 40px;
   }
   .hero--landing .hero-overlay {
