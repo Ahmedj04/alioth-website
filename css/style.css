@@ -6140,7 +6140,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
-  max-width: 1040px;
   margin-inline: 0;
   text-align: left;
 }
@@ -6732,6 +6731,57 @@ body.article-page {
   left: 0;
   color: var(--orange);
   font-weight: 800;
+}
+.article-content .article-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+.article-task-list li {
+  padding-left: 0;
+}
+.article-task-list label {
+  display: grid;
+  grid-template-columns: 1.1rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+.article-task-list input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  accent-color: var(--navy);
+  cursor: pointer;
+}
+.article-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.6rem 0;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+.article-matrix {
+  display: table;
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.article-matrix caption {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  font-weight: 800;
+}
+.article-matrix th,
+.article-matrix td {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.article-matrix thead {
+  background: var(--cyan-soft);
 }
 .article-toc {
   position: sticky;
