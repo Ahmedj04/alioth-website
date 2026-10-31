@@ -1,3 +1,17 @@
 RewriteEngine On
-RewriteCond %{QUERY_STRING} .
-RewriteRule ^$ - [R=404,L]
+
+# Redirect only explicit requests for the homepage filename. THE_REQUEST keeps
+# serving / through index.html from triggering an internal redirect loop.
+RewriteCond %{HTTP_HOST} ^(www\.)?aliothdigital\.com$ [NC]
+RewriteCond %{THE_REQUEST} \s/+index\.html[?\s]
+RewriteRule ^index\.html$ https://aliothdigital.com/ [R=301,L]
+
+# Use the non-www hostname for every production page, retaining its path.
+RewriteCond %{HTTP_HOST} ^www\.aliothdigital\.com$ [NC]
+RewriteRule ^ https://aliothdigital.com%{REQUEST_URI} [R=301,L]
+
+# Use HTTPS, including when Hostinger's proxy reports the original protocol.
+RewriteCond %{HTTP_HOST} ^aliothdigital\.com$ [NC]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !^https$ [NC]
+RewriteRule ^ https://aliothdigital.com%{REQUEST_URI} [R=301,L]
