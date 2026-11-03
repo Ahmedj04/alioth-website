@@ -6,6 +6,7 @@
     initMobileMenu();
     initMegaMenu();
     initScrollReveal();
+    initArticleContents();
     initPointerLift();
     initFormValidation();
     initCookieBanner();
@@ -130,6 +131,53 @@
     }, { threshold: 0.12, rootMargin: "0px 0px -30px" });
 
     items.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- Highlight the article section currently being read ---------- */
+  function initArticleContents() {
+    var toc = document.querySelector(".article-toc");
+    var article = document.querySelector(".article-content");
+    if (!toc || !article) return;
+
+    var sections = [];
+    toc.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      var heading = document.getElementById(link.hash.slice(1));
+      if (heading && article.contains(heading)) {
+        sections.push({ link: link, heading: heading });
+      }
+    });
+    if (!sections.length) return;
+
+    var header = document.querySelector("[data-header]");
+    var activeLink = null;
+    var scheduled = false;
+
+    function update() {
+      scheduled = false;
+      var headerBottom = header ? Math.max(0, header.getBoundingClientRect().bottom) : 0;
+      // Change sections as their headings enter the upper quarter of the reading area.
+      var readingLine = headerBottom + (window.innerHeight - headerBottom) * 0.25;
+      var current = article.getBoundingClientRect().top <= readingLine ? sections[0].link : null;
+      sections.forEach(function (section) {
+        if (section.heading.getBoundingClientRect().top <= readingLine) current = section.link;
+      });
+      if (current === activeLink) return;
+      if (activeLink) activeLink.removeAttribute("aria-current");
+      if (current) current.setAttribute("aria-current", "location");
+      activeLink = current;
+    }
+
+    function scheduleUpdate() {
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(update);
+    }
+
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate, { passive: true });
+    window.addEventListener("load", scheduleUpdate);
+    if (document.fonts) document.fonts.ready.then(scheduleUpdate);
+    update();
   }
 
   /* ---------- Subtle pointer-tilt on cards ---------- */
