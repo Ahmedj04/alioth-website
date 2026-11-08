@@ -7058,114 +7058,60 @@ body.article-page {
 }
 .hero--landing .hero-grid { padding-block: 0; }
 
-/* A compact, editorial services introduction with integrated category navigation. */
+/* Services begin with a slim category bar and lead straight into the listings. */
 .page-hero.services-intro {
-  padding: 22px 0 0;
-  background: var(--white) !important;
-  color: var(--navy-deep);
-  border-bottom: 1px solid var(--line);
+  padding: 24px 0;
+  background: #00152e !important;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
 }
-.services-intro::after,
-.services-intro .breadcrumb::before,
-.services-intro .breadcrumb::after { display: none; }
-.services-intro .breadcrumb {
-  margin: 0 0 16px;
-  padding: 0;
-  color: var(--slate);
-  font-size: .62rem;
-}
-.services-intro .breadcrumb a,
-.services-intro .breadcrumb span { color: var(--slate); }
-.services-intro .breadcrumb a:hover { color: var(--navy-deep); }
+.services-intro::after { display: none; }
+.services-intro .breadcrumb { margin: 0 0 22px; }
 .services-intro__row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 14px 32px;
 }
 .services-intro h1 {
-  font-size: clamp(2.2rem, 4vw, 3.25rem);
-  line-height: 1.1;
-  letter-spacing: -.055em;
   margin: 0;
-}
-.services-intro h1 .accent { color: var(--orange); }
-.services-intro__row p {
-  margin: 0;
-  color: var(--slate);
-  font-size: .88rem;
-  line-height: 1.5;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.045em;
 }
 .service-category-nav {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 22px;
-  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
 }
 .service-category-nav a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 14px;
-  min-width: 0;
-  padding: 18px 22px;
-  border-inline-end: 1px solid var(--line);
-  border-bottom: 3px solid transparent;
-  color: var(--navy-deep);
-  transition: background .2s, border-color .2s;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  color: rgba(255, 255, 255, .8);
+  font-size: .84rem;
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color .2s, border-color .2s;
 }
-.service-category-nav a:first-child { padding-left: 0; }
-.service-category-nav a:last-child { border-inline-end: 0; padding-right: 0; }
-.service-category-nav__number {
-  align-self: flex-start;
-  padding-top: 2px;
-  color: var(--slate);
-  font-size: .65rem;
-  font-weight: 700;
-}
-.service-category-nav__copy { display: grid; gap: 3px; min-width: 0; }
-.service-category-nav__copy small {
-  color: var(--slate);
-  font-size: .6rem;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-.service-category-nav__copy strong {
-  font-size: .88rem;
-  font-weight: 700;
-  line-height: 1.45;
-}
-.service-category-nav__arrow {
-  display: grid;
-  place-items: center;
-  flex: 0 0 28px;
-  height: 28px;
-  margin-left: auto;
-  border-radius: 50%;
-  background: var(--paper-2);
-  font-size: .85rem;
-}
+.service-category-nav a span { color: var(--cyan); }
 .service-category-nav a:hover,
 .service-category-nav a:focus-visible {
   border-bottom-color: var(--orange);
-  background: var(--paper);
+  color: var(--white);
 }
-.service-category-nav a:focus-visible { outline: 2px solid var(--navy); outline-offset: -2px; }
-@media (max-width: 700px) {
-  .page-hero.services-intro { padding-top: 18px; }
-  .services-intro__row { flex-wrap: wrap; gap: 8px; }
-  .services-intro__row p { font-size: .78rem; }
-  .service-category-nav { margin-top: 18px; }
-  .service-category-nav a {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 7px;
-    padding: 12px 10px;
-  }
-  .service-category-nav__number { padding: 0; }
-  .service-category-nav__copy { gap: 4px; }
-  .service-category-nav__copy strong { font-size: .75rem; }
-  .service-category-nav__arrow { display: none; }
+.service-category-nav a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 5px;
+}
+@media (max-width: 640px) {
+  .page-hero.services-intro { padding: 20px 0 16px; }
+  .service-category-nav { gap: 6px 20px; }
+  .service-category-nav a { gap: 6px; font-size: .75rem; }
 }
 
 /* Client projects use consistent brand panels and content cards. */
