@@ -16,17 +16,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261108-services-hero">
 </head>
 
 <body>
-
-  <div class="topline">
-    <div class="container topbar-inner">
-      <span><img class="uk-flag" src="images/uk-flag.svg" width="18" height="12" alt="United Kingdom"> <i>London &middot; UK</i></span>
-      <span class="topbar-right">COMPETE <b>&middot;</b> BUILD <b>&middot;</b> GROW</span>
-    </div>
-  </div>
 
   <header class="site-header" data-header>
     <div class="container nav">
@@ -105,69 +98,32 @@
   </header>
 
   <main>
-    <section class="page-hero premium-hero">
-      <div class="hero-noise" aria-hidden="true"></div>
+    <section class="page-hero services-intro">
       <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Services</span>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Services</span>
         </nav>
-        <div class="service-hero-copy">
-          <span class="eyebrow">What we do</span>
-          <h1>Good work starts<br><span class="accent">with clarity.</span></h1>
-          <p>Three clear routes, built around real business moments: an opportunity you want to compete, a team you need
-            to build, or a business you want to grow.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="contact.html">Start a conversation &#8599;</a>
-            <a class="btn ghost" href="#routes">See the routes &darr;</a>
-          </div>
+        <div class="services-intro__row">
+          <h1>Our services<span class="accent">.</span></h1>
+          <p>Specialist expertise. Coordinated delivery.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="section route-section" id="routes">
-      <div class="container">
-        <div class="section-head">
-          <div><span class="kicker">The Alioth way</span>
-            <h2 class="title">Choose the outcome.<br><em>We build the route.</em></h2>
-          </div>
-          <p>We deliberately keep the front door simple. Behind it is a deeper set of specialist services, delivered
-            with one accountable team.</p>
-        </div>
-
-        <div class="route-tree">
-          <div class="tree-stem" aria-hidden="true"></div>
-
-          <a class="route-card compete reveal" href="#compete">
-            <span class="route-number">01</span><span class="route-word">COMPETE</span>
-            <div>
-              <span class="route-tag">Bid &amp; Tender Management</span>
-              <h3>Turn an opportunity into a controlled tender response.</h3>
-              <p>Tender analysis, bid development, compliance &amp; QA, bid planning and submission support for
-                businesses pursuing public or private sector opportunities.</p>
-              <span class="card-link">Explore COMPETE &#8599;</span>
-            </div>
+        <nav class="service-category-nav" aria-label="Service categories">
+          <a href="#compete">
+            <span class="service-category-nav__number">01</span>
+            <span class="service-category-nav__copy"><small>Compete</small><strong>Bid &amp; tender management</strong></span>
+            <span class="service-category-nav__arrow" aria-hidden="true">&darr;</span>
           </a>
-
-          <a class="route-card build reveal" href="#build">
-            <span class="route-number">02</span><span class="route-word">BUILD</span>
-            <div>
-              <span class="route-tag">Recruitment &amp; Talent</span>
-              <h3>Bring the right capability into the room.</h3>
-              <p>Recruitment, IT staffing, talent sourcing, candidate screening and contract staffing for businesses
-                with permanent, specialist or temporary hiring needs.</p>
-              <span class="card-link">Explore BUILD &#8599;</span>
-            </div>
+          <a href="#build">
+            <span class="service-category-nav__number">02</span>
+            <span class="service-category-nav__copy"><small>Build</small><strong>Recruitment &amp; talent</strong></span>
+            <span class="service-category-nav__arrow" aria-hidden="true">&darr;</span>
           </a>
-
-          <a class="route-card grow reveal" href="#grow">
-            <span class="route-number">03</span><span class="route-word">GROW</span>
-            <div>
-              <span class="route-tag">Digital, Software &amp; IT</span>
-              <h3>Make your digital operation earn its place.</h3>
-              <p>Marketing, websites, software, AI, IT support and creative &mdash; connected rather than scattered.</p>
-              <span class="card-link">Explore GROW &#8599;</span>
-            </div>
+          <a href="#grow">
+            <span class="service-category-nav__number">03</span>
+            <span class="service-category-nav__copy"><small>Grow</small><strong>Digital, software &amp; IT</strong></span>
+            <span class="service-category-nav__arrow" aria-hidden="true">&darr;</span>
           </a>
-        </div>
+        </nav>
       </div>
     </section>
 
@@ -286,11 +242,10 @@
 
     <section class="section dark statement">
       <div class="container narrow">
-        <span class="kicker">A human promise</span>
-        <h2>Less theatre.<br><em>More useful work.</em></h2>
-        <p>You will always know what we are doing, why we are doing it and what needs your input. No black box. No
-          unnecessary jargon. No disappearing after the pitch.</p>
-        <a class="btn light" href="contact.html">Let's talk &#8599;</a>
+        <span class="kicker">Our commitment</span>
+        <h2>Accountable delivery.<br><em>Clear communication.</em></h2>
+        <p>Every engagement begins with an agreed scope, defined responsibilities and a clear delivery plan. We provide regular progress updates, involve you at key decisions and remain accountable for the quality of our work.</p>
+        <a class="btn light" href="contact.html">Discuss your requirements &#8599;</a>
       </div>
     </section>
   </main>
@@ -303,6 +258,17 @@
           <p>Bid &amp; tender management, recruitment and digital growth for businesses that need the work done properly
             &mdash; with clear ownership and no unnecessary theatre.</p>
           <a class="btn primary" href="contact.html">Start a conversation &#8599;</a>
+          <nav class="footer-socials" aria-label="Social media">
+            <a href="https://www.linkedin.com/company/aliothdigitalstudios/" target="_blank" rel="noopener noreferrer" aria-label="Alioth Digital Studios on LinkedIn (opens in a new tab)" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5.4 8.4H2.2V22h3.2V8.4ZM3.8 2a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8ZM22 13.6c0-4.1-2.2-5.7-4.8-5.7a4.2 4.2 0 0 0-3.8 2.1V8.4h-3.2V22h3.2v-7.5c0-2 1-3.4 2.8-3.4 1.7 0 2.5 1.1 2.5 3.4V22H22v-8.4Z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100078944193031" target="_blank" rel="noopener noreferrer" aria-label="Alioth Digital Studios on Facebook (opens in a new tab)" title="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M14.1 22v-9.1h3.1l.5-3.5h-3.6V7.2c0-1 .3-1.7 1.8-1.7h1.9V2.4a25 25 0 0 0-2.8-.2c-2.8 0-4.7 1.7-4.7 4.8v2.4H7.2v3.5h3.1V22h3.8Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/aliothdigitalstudios/" target="_blank" rel="noopener noreferrer" aria-label="Alioth Digital Studios on Instagram (opens in a new tab)" title="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </nav>
         </div>
         <div>
           <h4>Compete</h4>

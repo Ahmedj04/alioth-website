@@ -16,17 +16,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261108-site-refresh-2">
 </head>
 
 <body>
-
-  <div class="topline">
-    <div class="container topbar-inner">
-      <span><img class="uk-flag" src="images/uk-flag.svg" width="18" height="12" alt="United Kingdom"> <i>London &middot; UK</i></span>
-      <span class="topbar-right">COMPETE <b>&middot;</b> BUILD <b>&middot;</b> GROW</span>
-    </div>
-  </div>
 
   <header class="site-header" data-header>
     <div class="container nav">
@@ -120,48 +113,67 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section work-showcase" aria-labelledby="featured-projects-title">
       <div class="container">
-        <div class="work-grid">
-          <article class="case large reveal" id="medecon">
-            <div class="visual">
-              <div class="mock"><strong>MEDECON</strong>
-                <p>Biomedical equipment specialist</p><small>Responsive &middot; SEO &middot; service showcase</small>
-              </div>
+        <div class="section-head">
+          <div>
+            <span class="kicker">Featured projects</span>
+            <h2 class="title" id="featured-projects-title">Digital work.<br><em>Built around each business.</em></h2>
+          </div>
+          <p>Distinct sectors, individual requirements. Explore how we have helped clients present their services and support their customers online.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-card--medecon reveal" id="medecon">
+            <div class="project-card__visual">
+              <span class="project-card__index" aria-hidden="true">01 / SELECTED WORK</span>
+              <div class="project-card__logo"><img src="images/medecon-logo.png" alt="Medecon" loading="lazy"></div>
+              <span class="project-card__caption">Biomedical equipment specialist</span>
             </div>
-            <div class="case-body">
+            <div class="project-card__body">
               <span class="meta">Healthcare &middot; Website</span>
               <h3>Medecon</h3>
-              <p>A responsive, SEO-optimised website explaining biomedical engineering services, equipment,
-                refurbishment, decommissioning and 24/7 support.</p>
-              <div class="case-meta"><span>Web design</span><span>SEO</span><span>Content</span></div>
+              <p>A responsive, SEO-optimised website explaining biomedical engineering services, equipment, refurbishment, decommissioning and 24/7 support.</p>
+              <ul class="project-card__tags" aria-label="Project services">
+                <li>Web design</li>
+                <li>SEO</li>
+                <li>Content</li>
+              </ul>
             </div>
           </article>
-          <div class="case-stack">
-            <article class="case reveal" id="bkma">
-              <div class="visual">
-                <div class="mock"><strong>BKMA</strong>
-                  <p>Membership organisation</p><small>Member portal &middot; content</small>
-                </div>
-              </div>
-              <div class="case-body"><span class="meta">Membership</span>
-                <h3>BKMA</h3>
-                <p>A membership website built to make joining, renewing and finding information straightforward.</p>
-              </div>
-            </article>
-            <article class="case reveal" id="smartflow">
-              <div class="visual">
-                <div class="mock"><strong>Smart Flow</strong>
-                  <p>Industrial engineering</p><small>Service catalogue &middot; enquiries</small>
-                </div>
-              </div>
-              <div class="case-body"><span class="meta">Industrial</span>
-                <h3>Smart Flow Engineering</h3>
-                <p>A clear digital presence for a specialist engineering business, focused on capability and enquiries.
-                </p>
-              </div>
-            </article>
-          </div>
+          <article class="project-card project-card--bkma reveal" id="bkma">
+            <div class="project-card__visual">
+              <span class="project-card__index" aria-hidden="true">02 / SELECTED WORK</span>
+              <div class="project-card__logo"><img src="images/bkma-logo.png" alt="BKMA" loading="lazy"></div>
+              <span class="project-card__caption">British Kashmiri Medical Association</span>
+            </div>
+            <div class="project-card__body">
+              <span class="meta">Membership &middot; Website</span>
+              <h3>BKMA</h3>
+              <p>A membership website built to make joining, renewing and finding information straightforward.</p>
+              <ul class="project-card__tags" aria-label="Project services">
+                <li>Member portal</li>
+                <li>Web design</li>
+                <li>Content</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card project-card--smartflow reveal" id="smartflow">
+            <div class="project-card__visual">
+              <span class="project-card__index" aria-hidden="true">03 / SELECTED WORK</span>
+              <div class="project-card__logo"><img src="images/smart-flow-logo.png" alt="Smart Flow Engineering" loading="lazy"></div>
+              <span class="project-card__caption">Specialist engineering services</span>
+            </div>
+            <div class="project-card__body">
+              <span class="meta">Industrial &middot; Website</span>
+              <h3>Smart Flow Engineering</h3>
+              <p>A clear digital presence for a specialist engineering business, focused on capability and enquiries.</p>
+              <ul class="project-card__tags" aria-label="Project services">
+                <li>Service catalogue</li>
+                <li>Web design</li>
+                <li>Enquiries</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -192,6 +204,7 @@
           <div class="client"><span class="client-logo"><img src="images/smart-flow-logo.png"
                 alt="Smart Flow Engineering"></span><small>Industrial</small></div>
         </div>
+      </div>
     </section>
 
     <section class="section">
@@ -252,6 +265,17 @@
           <p>Bid &amp; tender management, recruitment and digital growth for businesses that need the work done properly
             &mdash; with clear ownership and no unnecessary theatre.</p>
           <a class="btn primary" href="contact.html">Start a conversation &#8599;</a>
+          <nav class="footer-socials" aria-label="Social media">
+            <a href="https://www.linkedin.com/company/aliothdigitalstudios/" target="_blank" rel="noopener noreferrer" aria-label="Alioth Digital Studios on LinkedIn (opens in a new tab)" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5.4 8.4H2.2V22h3.2V8.4ZM3.8 2a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8ZM22 13.6c0-4.1-2.2-5.7-4.8-5.7a4.2 4.2 0 0 0-3.8 2.1V8.4h-3.2V22h3.2v-7.5c0-2 1-3.4 2.8-3.4 1.7 0 2.5 1.1 2.5 3.4V22H22v-8.4Z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100078944193031" target="_blank" rel="noopener noreferrer" aria-label="Alioth Digital Studios on Facebook (opens in a new tab)" title="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M14.1 22v-9.1h3.1l.5-3.5h-3.6V7.2c0-1 .3-1.7 1.8-1.7h1.9V2.4a25 25 0 0 0-2.8-.2c-2.8 0-4.7 1.7-4.7 4.8v2.4H7.2v3.5h3.1V22h3.8Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/aliothdigitalstudios/" target="_blank" rel="noopener noreferrer" aria-label="Alioth Digital Studios on Instagram (opens in a new tab)" title="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </nav>
         </div>
         <div>
           <h4>Compete</h4>
