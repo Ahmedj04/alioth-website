@@ -6849,6 +6849,21 @@ body.article-page {
 .article-cta p {
   color: var(--muted-light);
 }
+.article-cta p a {
+  color: var(--cyan);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.article-cta p a:hover,
+.article-cta p a:focus-visible {
+  color: var(--white);
+}
+.article-cta p a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
 .article-cta .article-cta-link {
   display: inline-flex;
   align-items: center;
