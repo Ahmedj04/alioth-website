@@ -6144,6 +6144,18 @@ body {
   text-align: left;
 }
 
+@media (min-width: 992px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .blog-card h2 {
+    font-size: clamp(1.35rem, 1.6vw, 1.65rem);
+    line-height: 1.2;
+  }
+}
+
 .blog-card {
   min-width: 0;
   min-height: 0;
@@ -6215,6 +6227,42 @@ body {
   text-transform: uppercase;
   letter-spacing: .12em;
   font-weight: 800;
+}
+
+.blog-card__media {
+  display: block;
+  margin: -24px -24px 20px -24px;
+  overflow: hidden;
+  background: var(--navy);
+  aspect-ratio: 16 / 9;
+  border-bottom: 1px solid var(--line);
+}
+
+.blog-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s var(--ease);
+}
+
+.blog-card:hover .blog-card__media img {
+  transform: scale(1.04);
+}
+
+.article-featured-image {
+  margin: 0 0 32px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--navy);
+  aspect-ratio: 16 / 9;
+}
+
+.article-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .text-link {
@@ -6590,6 +6638,10 @@ body {
     padding: 20px;
   }
 
+  .blog-card__media {
+    margin: -20px -20px 16px -20px;
+  }
+
   .blog-card__top {
     margin-bottom: 16px;
   }
@@ -6653,13 +6705,31 @@ body.article-page {
   overflow-x: clip;
 }
 
+.article-page-hero {
+  position: relative;
+  background:
+    linear-gradient(115deg, rgba(0, 14, 32, 0.94) 0%, rgba(0, 27, 58, 0.86) 50%, rgba(0, 27, 58, 0.64) 100%),
+    var(--article-hero-bg, none) center / cover no-repeat !important;
+  padding: clamp(64px, 7vw, 100px) 0 clamp(54px, 6vw, 84px);
+}
+
+.article-page-hero:after {
+  display: none;
+}
+
+.article-page-hero p {
+  max-width: 780px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
 .article-page-hero .article-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 22px;
-  margin-top: 22px;
-  font-size: 0.72rem;
-  color: var(--muted-light);
+  margin-top: 24px;
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.72);
 }
 .article-layout {
   display: grid;
