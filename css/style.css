@@ -6278,6 +6278,177 @@ body {
   color: var(--cyan);
 }
 
+.homepage-insights {
+  background: #f3efe6;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.homepage-insights .blog-card {
+  box-shadow: 0 4px 20px rgba(0, 27, 58, 0.06);
+}
+
+.homepage-insights .blog-card:hover {
+  box-shadow: 0 20px 48px rgba(0, 27, 58, 0.12);
+}
+
+.homepage-faq .service-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 70px;
+  align-items: start;
+}
+
+.faq-collapse {
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+
+.faq-collapse:first-child {
+  border-top: 0;
+}
+
+.faq-collapse summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq-collapse summary::-webkit-details-marker,
+.faq-collapse summary::marker {
+  display: none;
+  content: "";
+}
+
+.faq-collapse summary:focus-visible {
+  outline: 2px solid var(--navy-mid, #0A3D75);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.faq-collapse__trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.faq-collapse__trigger h3 {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.35;
+  transition: color 0.2s ease;
+}
+
+.faq-collapse summary:hover .faq-collapse__trigger h3 {
+  color: var(--navy-mid, #0A3D75);
+}
+
+.faq-collapse__icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.faq-collapse summary:hover .faq-collapse__icon {
+  border-color: var(--navy-mid, #0A3D75);
+  background: rgba(10, 61, 117, 0.04);
+}
+
+.faq-collapse__icon::before,
+.faq-collapse__icon::after {
+  content: "";
+  position: absolute;
+  background: var(--ink);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* Horizontal plus line */
+.faq-collapse__icon::before {
+  width: 10px;
+  height: 1.5px;
+}
+
+/* Vertical plus line */
+.faq-collapse__icon::after {
+  width: 1.5px;
+  height: 10px;
+}
+
+/* When open: vertical line collapses/rotates so icon becomes a minus */
+.faq-collapse[open] .faq-collapse__icon {
+  border-color: var(--ink);
+  background: var(--ink);
+}
+
+.faq-collapse[open] .faq-collapse__icon::before {
+  background: #fff;
+}
+
+.faq-collapse[open] .faq-collapse__icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-collapse__content {
+  padding-top: 14px;
+  padding-bottom: 4px;
+}
+
+@keyframes faqFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq-collapse[open] .faq-collapse__content {
+  animation: faqFadeIn 0.25s ease-out;
+}
+
+.faq-collapse__content p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 960px) {
+  .homepage-faq .service-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .homepage-faq .service-layout > div + div .faq-collapse:first-child {
+    border-top: 1px solid var(--line);
+  }
+}
+
+/* ========================================
+   BOTTOM CTA SECTION
+   ======================================== */
+
+@media (min-width: 768px) {
+  #cta .cta-title-line {
+    white-space: nowrap;
+  }
+}
+
 /* ========================================
    ARTICLE
    ======================================== */

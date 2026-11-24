@@ -13,6 +13,7 @@
     initMeetingPanel();
     initTenderFile();
     initRoutePreselect();
+    initAccordion();
   });
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -306,5 +307,28 @@
         break;
       }
     }
+  }
+
+  /* ---------- Single-open FAQ Accordion ---------- */
+  function initAccordion() {
+    var groups = document.querySelectorAll("[data-accordion-group]");
+    if (!groups.length) {
+      var homeFaq = document.querySelector(".homepage-faq");
+      if (homeFaq) groups = [homeFaq];
+    }
+    groups.forEach(function (group) {
+      var details = group.querySelectorAll("details");
+      details.forEach(function (detail) {
+        detail.addEventListener("toggle", function () {
+          if (detail.open) {
+            details.forEach(function (other) {
+              if (other !== detail && other.open) {
+                other.open = false;
+              }
+            });
+          }
+        });
+      });
+    });
   }
 })();
